@@ -1,12 +1,38 @@
+<!DOCTYPE html>
 <html>
     <head>
         <title>
             Image Handler 
         </title>
-        <script src="js/imageHandler.js"></script>
+        <link rel="stylesheet" href="../css/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../css/styles.css">
+        <script src="../js/imageHandler.js"></script>
     </head>
     <body>
-        <canvas id="mycanvas" width="500" height="500"></canvas>
-        <h3>P.S: I have not used shahrukh khan's pic on fly. He is my favorite superstar!! </h3>
+        <div class="container-fluid">
+            <div class="row">
+                
+            </div>
+            <div class="row">
+                
+                <div class="col-sm-offset-3 col-sm-6">
+                                        <canvas id="myCanvas" width="600" height="500"></canvas>
+                                                                  </div>
+                <div class="col-sm-offset-3 col-sm-6">
+                    <button class="btn btn-primary" id="loadImage">load Image</button>
+                    <button class="btn btn-primary" id="zoomIn">Zoom In</button>
+                    <button class="btn btn-primary" id="zoomOut">Zoom Out</button>
+                    <button class="btn btn-primary" id="rotateLeft">Rotate Left</button>
+                    <button class="btn btn-primary" id="rotateRight">Rotate Right</button>
+                    <h4 id="message">P.S: I have not used shahrukh khan's pic on fly. He is my favorite SUPERSTAR.Period. </h4>
+
+                </div>
+                <!-- issue to be resolved without below method I was unable to get image on canvas element-->
+                <div style="display:none;">
+                <img src="../images/shahrukh.jpg" alt="Shahrukh Khan!">
+                </div>
+            </div>
+        </div>
+    
     </body>
 </html>
